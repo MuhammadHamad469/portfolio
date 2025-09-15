@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamad - Laravel Developer</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Basic favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body data-theme="light">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Hamad</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <button class="theme-toggle" onclick="toggleTheme()">
+              <i class="fas fa-moon" id="theme-icon"></i>
+              <span id="theme-text">Dark</span>
+            </button>
+          </li>
+        </ul>
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm Hamad</h1>
+          <p class="hero-subtitle">Laravel Developer</p>
+          <p class="hero-description">
+            I create robust, scalable web applications using Laravel. Passionate
+            about clean code, efficient backend logic, and modern frontend
+            integration, delivering secure and high-performance solutions that
+            provide exceptional user experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image floating">
+            <img src="hamad.jpg" alt="mohsin" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About/Skills Section -->
+    <section id="about" class="section">
+  <h2 class="section-title">WHAT I DO</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">
+        <i class="fas fa-server"></i>
+      </div>
+      <h3 class="skill-title">Laravel Development</h3>
+      <p class="skill-description">
+        Developing robust, scalable, and secure web applications using Laravel,
+        tailored to meet modern business needs.
+      </p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <h3 class="skill-title">API Development</h3>
+      <p class="skill-description">
+        Building RESTful APIs for seamless integration between frontend and backend,
+        enabling dynamic and efficient applications.
+      </p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3 class="skill-title">Clean & Scalable Code</h3>
+      <p class="skill-description">
+        Writing maintainable, scalable, and well-documented code following best
+        practices and modern design patterns.
+      </p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">
+        <i class="fas fa-globe"></i>
+      </div>
+      <h3 class="skill-title">Full-Stack Web Solutions</h3>
+      <p class="skill-description">
+        Creating complete web solutions with powerful backend logic, smooth
+        frontend integration, and database management.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="1.jpg" alt="#" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Food Delivery App</h3>
+            <p class="project-description">
+              A full-featured e-commerce multi-dashboard mobile application with
+              product catalog, shopping cart, and secure payment integration.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">Fcm</span>
+              <span class="tech-tag">Local notifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="3.jpeg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Face Recognition App</h3>
+            <p class="project-description">
+              A Flutter app for real-time face recognition using Google’s ML Kit
+              for face detection and TensorFlow Lite for face embedding and
+              recognition.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Ml Kit</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="2.jpg" alt="img" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Chat Application</h3>
+            <p class="project-description">
+              Real-time messaging app with group chats, media sharing, and push
+              notifications for seamless communication.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">SqfLite</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">FCM</span>
+              <span class="tech-tag">Shared preferences</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="4.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AI ChatBot</h3>
+            <p class="project-description">
+              A Flutter-based AI chatbot application integrating OpenAI's API to
+              enable intelligent, real-time conversational experiences with
+              natural language understanding.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Gemini</span>
+              <span class="tech-tag">Local Storage</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Provider</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="5.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Malicious Link Detector</h3>
+            <p class="project-description">
+              A Flutter app that detects potentially harmful or malicious URLs
+              using the Google Safe Browsing API to protect users from phishing,
+              malware, and other online threats.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Rest Api</span>
+              <span class="tech-tag">Get X</span>
+              <span class="tech-tag">Google Safe Browsing</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="6.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Coffee Shop</h3>
+            <p class="project-description">
+              Modern & sleek Coffee shop ui with product detail view page.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Rest Api</span>
+              <span class="tech-tag">local Storage</span>
+              <span class="tech-tag">Shared Preferences</span>
+              <span class="tech-tag">Dart</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="plant.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Plant Shop</h3>
+            <p class="project-description">
+              A clean, modern, and responsive user interface for a plant
+              shopping app designed in Flutter. The app features smooth
+              navigation, vibrant visuals, and an intuitive layout to enhance
+              the user’s shopping experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Rest Api</span>
+              <span class="tech-tag">local Storage</span>
+              <span class="tech-tag">MVC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="emotion.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Emotion Detector App</h3>
+            <p class="project-description">
+              A real-time emotion detection mobile app integrated with
+              TensorFlow Lite. The app captures facial expressions through the
+              device camera classify emotions such as happy, sad, angry,
+              surprised, and neutral.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Shared Preferences</span>
+              <span class="tech-tag">local Storage</span>
+              <span class="tech-tag">Local Notifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="grocery.jpg" alt="image" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Grocery Shopping App</h3>
+            <p class="project-description">
+              A user-friendly and responsive grocery shopping app built with
+              Flutter, designed to provide a seamless online shopping
+              experience. Product listing, category filters, a dynamic cart,
+              order summary, and checkout flow.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">local Storage</span>
+              <span class="tech-tag">MVC</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Fcm</span>
+              <span class="tech-tag">Local Notifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <h3 class="footer-title">Let's Work Together</h3>
+        <p>Ready to bring your mobile app idea to life? Let's connect!</p>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/flutterwithmohsin"
+            class="social-link"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-hamad-39ab1237a/"
+            class="social-link"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/muhammad_hamad_66/"
+            class="social-link"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- <a
+            href="https://www.youtube.com/@flutterwithmohsin"
+            class="social-link"
+            title="Youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-youtube"></i>
+          </a> -->
+          <a
+            href="https://wa.me/923168307949"
+            class="social-link"
+            title="Whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="mailto:muhammadhamadjb99@gmail.com"
+            class="social-link"
+            title="Email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="footer-text">
+          <p>
+            &copy; 2025 Hamad. Crafted with
+            <i class="fas fa-heart" style="color: red"></i> using Laravel
+            principles.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Theme Toggle Functionality
+      function toggleTheme() {
+        const body = document.body;
+        const themeIcon = document.getElementById("theme-icon");
+        const themeText = document.getElementById("theme-text");
+
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        body.setAttribute("data-theme", newTheme);
+
+        if (newTheme === "dark") {
+          themeIcon.className = "fas fa-sun";
+          themeText.textContent = "Light";
+        } else {
+          themeIcon.className = "fas fa-moon";
+          themeText.textContent = "Dark";
+        }
+
+        // Save theme preference (commented out for Claude artifacts)
+        // localStorage.setItem('theme', newTheme);
+      }
+
+      // Initialize theme on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Default to light theme in artifacts
+        const savedTheme = "light"; // localStorage.getItem('theme') || 'light';
+        document.body.setAttribute("data-theme", savedTheme);
+
+        const themeIcon = document.getElementById("theme-icon");
+        const themeText = document.getElementById("theme-text");
+
+        if (savedTheme === "dark") {
+          themeIcon.className = "fas fa-sun";
+          themeText.textContent = "Light";
+        } else {
+          themeIcon.className = "fas fa-moon";
+          themeText.textContent = "Dark";
+        }
+      });
+    </script>
+
+    <script>
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      mobileToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Optional: close menu when clicking a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
